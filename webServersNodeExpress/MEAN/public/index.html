@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="meanhotel">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 </head>
 <body>
     
-    <h1>MEAN hotel homepage</h1>
+    <div ng-view></div>
     
     <footer class="footer">
         <div class="container">
@@ -19,13 +19,20 @@
                 <a href="http://fullstacktraining.com" target="_blank"><img src="https://picsum.photos/200/300/?random" height="26" alt="Full Stack Training"/></a>
             </p>
             <p class="text-muted text-center">
-                <small>$copy: 2015 Full Stack Training Ltd</small>
+                <small>$copy; 2015 Full Stack Training Ltd</small>
             </p>
         </div>
     </footer>
-    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="angular-app/app.js"></script>
+    <script src="angular-app/hotel-list/hotel-list-controller.js"></script>
+    <script src="angular-app/hotel-display/hotel-display-controller.js"></script>
+    <script src="angular-app/hotel-data-factory/hotel-data-factory.js"></script>
+    <script src="angular-app/hotel-rating/hotel-rating-directive.js"></script>
+    
 </body>
 </html>
